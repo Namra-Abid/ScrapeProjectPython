@@ -22,7 +22,7 @@ def check(info):
     d=d.replace("\\",'')
     return d
 
-external_sites_html =uReq("https://www.instagram.com/m.qasim077/")
+external_sites_html =uReq("https://www.instagram.com/")
 soup = BeautifulSoup(external_sites_html, 'lxml')
 detail_list=soup.find("script",{"type":"application/ld+json"})
 ss=detail_list.prettify()
